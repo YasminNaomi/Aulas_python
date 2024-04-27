@@ -10,6 +10,7 @@ print(msg2)
 
 msg3 = f'{nome:*^15s} tem {idade} anos e ganha R${salario:.1f}'
 print(msg3)
+
 i = 0
 j = 10 
 n = 0 
