@@ -70,7 +70,7 @@ animais.append("gato")
 print(animais)
 lista3 = ["felinos", "aves"]
 animais.extend(lista3[0])
-# animais.append(["a", "b"])
+# animais.append(["a", "b"]) #inserir novos elementos
 animais.extend(["a", "b"])
 print(animais)
 print([1, 2] + [3, 4])
