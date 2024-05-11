@@ -89,3 +89,44 @@ quantidadeNotas = int(input("Escreva um número de notas a serem lidas: "))
 for nota in range(quantidadeNotas):
     input(f"Digite a {nota + 1}° nota: ")
 #=================================================
+qprint(f'{horas:02d}:{minutos:02d}')uantidadeNotas = int(input("Escreva um número de notas a serem lidas: "))
+notafinal = []
+for i in range(quantidadeNotas):
+    nota = float(input(f"Digite a {i + 1}° nota: "))
+    notafinal.append(nota)
+print(notafinal)
+
+soma = 0
+for i in notafinal:
+    print(f'nota: {i:}')
+    soma += 1
+
+print(f'A soma das notas é {soma}')
+print(f'A media das notas é {soma/len(notafinal)}')
+#===================================================
+
+fila = []
+while True:
+    acao = input('Digite A para adicionar na fila ou R para remover da fila:')
+    if acao == 'A':
+        nome = input('Digite o nome da pessoa:')
+        fila.append(nome)
+    elif acao == 'R':
+        rem = fila.pop(0)
+        print(f'rem foi atendido')
+        print(f'O tamanho da fila agora é de {len(fila)} pessoas.')
+    else:
+        print('Comando inválido')
+
+    print(fila)
+    enc = input('Deseja encerrar a fila? (S para encerrar)')
+
+    if enc == 'S':
+        break
+
+print(fila)
+#=====================================================
+
+for horas in range(0, 24):
+    for minutos in range(60):
+        
