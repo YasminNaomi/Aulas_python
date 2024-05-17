@@ -129,4 +129,30 @@ print(fila)
 
 for horas in range(0, 24):
     for minutos in range(60):
-        
+
+
+#========================================================
+n = int(input("Digite um número inteiro n: "))
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+
+qntd_notas = int(input("Digite a quantidadde de notas:"))
+notas = []
+media = []
+for i in range(qntd_notas):
+        nota = float(input(f'Digite as notas {i + 1 }:'))
+        notas.append (nota)
+
+print(f'AS notas digitadas foram :')
+for nota in notas:
+   print(nota)
+
+media = sum(notas) / qntd_notas
+print (f'A media das suas notas foi: {media:.2f}')
+if media >= 6:
+     print('Você passou de ano')
+else:
+     print('Você reprovou de ano')
